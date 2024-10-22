@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your IT Batches Get-Together Ticket</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #1a1a1d;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #262626;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .header {
+            background-color: #0b84f3;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 25px;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background-image: url('https://www.transparenttextures.com/patterns/circles.png');
+        }
+        .ticket-info {
+            padding: 20px;
+            color: #d3d3d3;
+        }
+        .ticket-info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .ticket-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0b84f3;
+            text-align: center;
+            padding: 10px;
+            border: 2px dashed #0b84f3;
+            margin: 20px 0;
+            background: #2e2e2e;
+            border-radius: 5px;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qr-code img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .event-details {
+            background-color: #333333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .event-details p {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #0b84f3;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #e0e0e0;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            IT Batches Get-Together 2024
+        </div>
+        <div class="ticket-info">
+            <p><strong>Name:</strong> {NAME}</p>
+            <p><strong>Batch:</strong> {BATCH}</p>
+            <div class="ticket-number">Ticket #: {TICKET_NUMBER}</div>
+            <div class="qr-code">
+                <img src="{QR_CODE}" alt="QR Code">
+            </div>
+            <div class="event-details">
+                <p><strong>Event Date:</strong> {EVENT_DATE}</p>
+                <p><strong>Time:</strong> {EVENT_TIME}</p>
+                <p><strong>Venue:</strong> {VENUE}</p>
+            </div>
+            <p><strong>Additional Info:</strong> {ADDITIONAL_INFO}</p>
+        </div>
+        <div class="footer">
+            <p>This ticket is non-transferable. Please bring a form of ID to the event.</p>
+            <p>For any queries, please contact: {CONTACT_EMAIL}</p>
+            <div class="social-icons">
+                <a href="{FACEBOOK_URL}">Facebook</a> |
+                <a href="{TWITTER_URL}">Twitter</a> |
+                <a href="{INSTAGRAM_URL}">Instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
